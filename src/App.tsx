@@ -10,12 +10,6 @@ function App() {
   // Use useSnapshot to subscribe to state changes
   const snap = useSnapshot(deviceStore);
 
-  useEffect(() => {
-    for(let i = 0; i < 10000; i++) {
-      initVersionInfo();
-    }
-  }, []);
-
   return (
     <div className="App">
       <h1>Valtio Demo - Device Management</h1>
@@ -37,9 +31,7 @@ function App() {
 
         <div className="button-group">
           <button onClick={() => {
-            for(let i = 0; i < 10000; i++) {
-              initVersionInfo();
-            }
+            initVersionInfo();
           }}>
             initVersionInfo
           </button>
