@@ -36,6 +36,13 @@ function App() {
         </div>
 
         <div className="button-group">
+          <button onClick={() => {
+            for(let i = 0; i < 10000; i++) {
+              initVersionInfo();
+            }
+          }}>
+            initVersionInfo
+          </button>
           <button
             onClick={() => {
               console.log("test");
